@@ -1,7 +1,7 @@
 /* @define-color foreground #996600; */
 /* @define-color background #1A1612; */
 @define-color foreground #61afef; /* @define-color background rgba(28,14,0,0.15); */
-@define-color background rgba(0,0,0,0.0);
+@define-color background #282c34;
 
 /*********** Custom Styling ****************/
 
@@ -10,11 +10,17 @@
   color: @foreground;
   font-size: 12px;
   font-weight: bold;
+  border-width: 1px;
 }
 
 #waybar {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+window > box {
+  border-bottom: 2px solid #89ca78;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 #workspaces button.active {
@@ -51,6 +57,10 @@
 }
 
 .modules-right {
+  /* margin-right: 8px; */
+}
+
+.modules-center {
   /* margin-right: 8px; */
 }
 
